@@ -1,0 +1,9 @@
+aiohttp==3.8.4
+browser_cookie3==0.19.1
+certifi==2023.5.7
+curl_cffi==0.5.7
+py-cord==2.4.1
+pycryptodome==3.18.0
+PyExecJS==1.5.1
+python-dotenv==1.0.0
+Requests==2.31.0
