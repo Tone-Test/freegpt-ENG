@@ -7,7 +7,7 @@ from consts import *
 
 ctxt = ds.ApplicationContext
 
-def request(q, model=g4f.Model.falcon_7b):
+def request(q, model=g4f.Model.gpt_35_turbo):
     response: str = g4f.ChatCompletion.create(model=model, messages=[{'role': 'user', 'content': q}])
     response = response.encode('iso-8859-1').decode('utf-8')
     return response
