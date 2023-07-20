@@ -19,7 +19,8 @@ async def on_ready():
 async def on_message(msg: ds.Message):
     q = None
     if msg.reference and isinstance(msg.reference.resolved, ds.Message) and msg.reference.resolved.author.id == bot.user.id:
-        q = msg.content
+        if msg.reference.resolved.reference.resolved and msg.reference.resolved.reference.resolved.author.id == msg.author.id: q = msg.content
+        else: await msg.channel.send(embed=ErrorEmbed('Это не ваш чат'), reference=msg)
     if msg.content.startswith(f'<@{bot.user.id}>'):
         q = ' '.join(msg.content.split(' ')[1:])
     if q == None: return
