@@ -1,6 +1,8 @@
 from discord import Option
 from g4f.models import Model
 
+VERSION = 'v1.2'
+
 INFO_TEXT = '''- Создан `@kerherr`-ом на основе проекта GPT4Free.
 - Поддерживает продолжение разговора.
 **Модели**
