@@ -1,6 +1,8 @@
 # GPT4Free Discord Bot
 Version: 1.2
+
 Discord bot built using xtekky's GPT4Free project.
+
 [Official Site](https://freegpt.medved404.repl.co)
 
 # Setup
