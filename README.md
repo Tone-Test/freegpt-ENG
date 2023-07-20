@@ -1,5 +1,6 @@
 # GPT4Free Discord Bot
 Discord bot built using xtekky's GPT4Free project.
+[Official Site](freegpt.medved404.repl.co)
 
 # Setup
 1. Create `.env` file, which says: `TOKEN=<your discord token>`
