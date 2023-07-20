@@ -27,7 +27,7 @@ class ChatCompletion:
                     f"ValueError: {engine.__name__} does not support 'stream' argument", file=sys.stderr)
                 sys.exit(1)
 
-            print(f'Using {engine.__name__} provider')
+            #print(f'Using {engine.__name__} provider')
 
             return (engine._create_completion(model.name, messages, stream, **kwargs)
                     if stream else ''.join(engine._create_completion(model.name, messages, stream, **kwargs)))

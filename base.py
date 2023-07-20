@@ -1,11 +1,12 @@
 import g4f
 from json import load, dump
 from consts import *
+from os import name as osname
 
 def request(ctx: list, q, model=DEFAULT_MODEL):
     ctx.append({'role': 'user', 'content': q})
     response: str = g4f.ChatCompletion.create(model=model, messages=ctx)
-    response = response.encode('iso-8859-1').decode('utf-8')
+    if osname == 'nt': response = response.encode('iso-8859-1').decode('utf-8')
     return response
 
 def readjson(path) -> dict:
