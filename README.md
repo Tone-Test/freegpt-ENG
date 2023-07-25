@@ -1,5 +1,5 @@
 # FreeGPT - GPT4Free Discord Bot
-Version: 1.2
+Version: 1.2-ENG
 
 Discord bot built using xtekky's GPT4Free project.
 
