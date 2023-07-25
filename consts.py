@@ -3,7 +3,7 @@ from g4f.models import Model
 
 VERSION = '1.2'
 
-INFO_TEXT = '''- Created by `@kerherr` based on the GPT4Free project.
+INFO_TEXT = '''- Created by `@kerherr` based on the GPT4Free project. Kinda translated into english by Tone-Test on GH
 - Supports conversation continuation.
 **Models**
 - GPT 3.5 Turbo - original, default
