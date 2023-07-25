@@ -3,13 +3,13 @@ from g4f.models import Model
 
 VERSION = '1.2'
 
-INFO_TEXT = '''- Создан `@kerherr`-ом на основе проекта GPT4Free.
-- Поддерживает продолжение разговора.
-**Модели**
-- GPT 3.5 Turbo - оригинал, по умолчанию
-- Falcon 7B - быстрая
-- Falcon 40B - медленнее, но лучше
-- LLama 13B - что-то среднее'''
+INFO_TEXT = '''- Created by `@kerherr` based on the GPT4Free project.
+- Supports conversation continuation.
+**Models**
+- GPT 3.5 Turbo - original, default
+- Falcon 7B - fast
+- Falcon 40B - slower, but better
+- LLama 13B - something in between'''
 
 MODELS = [Model.gpt_35_turbo.name, Model.falcon_40b.name, Model.falcon_7b.name, Model.llama_13b.name]
 DEFAULT_MODEL = Model.gpt_35_turbo
